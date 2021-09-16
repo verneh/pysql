@@ -1,0 +1,39 @@
+
+
+
+before we proceed, this was all done through visual studio code and a mac. 
+
+######################################### instructions ##########################################################
+
+- download python 3.9.2 
+
+- get the docker image - hhttps://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash - and follow the instuctions.
+
+- make sure that your sql server is up and running then...
+
+- go to terminal/command prompt, setup a virtual environment. python3 -m venv (name of environment)
+
+- then source (name of environment)/bin/activate. go in the folder of your environment. 
+
+- this should automatically give you pip.
+
+- kindly run setup.py once so that it install the missing packages before running main.py.
+
+- if that doesn't work, there's always pip install -r requirements.txt on terminal.
+
+- now, the first time you run main.py there's no updated.csv file since no one has done a query previously.
+
+- updated.csv will be generated once you change something in sql (or not) and run main.py again.
+
+- on future main runs, there's always one alwaysfresh file stored and every fetch or run of main.py 
+  generates an updated.csv 
+
+- the view could be seen by a print of current view or current fetch or run of main.py
+
+- afterwards, there will be a check made to see if there is a change in the database from the sql fetch.
+
+- if there is, the updated file will be the new alwaysfresh file. remove updated and rename it to alwaysfresh.
+
+- if there is none, then whatever was stored previously will be fetched and reflected on the current view.
+
+- deactivate -> type on terminal when done.

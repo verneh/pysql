@@ -1,0 +1,4 @@
+numpy==1.20.1
+pandas==1.2.3
+pyodbc==4.0.30
+csv_diff==1.1
