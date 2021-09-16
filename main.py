@@ -5,7 +5,7 @@ from functions import *
 def main():
 
     # defining the connection to MSSQL. change connection here. change user and pass to your own.
-    connection_string = "DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost;DATABASE=Survey_Sample_A19;UID=sa;PWD=Yolo8181"
+    connection_string = "DRIVER={ODBC Driver 17 for SQL Server}; SERVER=localhost;DATABASE=Survey_Sample_A19;UID=sa;PWD=XXXXXXXX"
 
     # storing mssql connection into a variable.
     mssql_connection = db_connect(connection_string)
